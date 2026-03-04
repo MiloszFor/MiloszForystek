@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="PerfumeOfHaven - Ekskluzywne perfumy męskie i damskie. Odkryj swój unikalny zapach w naszej luksusowej kolekcji.">
+    <title>PerfumeOfHaven | Luksusowe Perfumy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Montserrat:wght@200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="logo">PerfumeOf<span>Haven</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Strona Główna</a></li>
+            <li><a href="#about">O nas</a></li>
+            <li><a href="#collection">Kolekcja</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <header id="home" class="hero"
+        style="background-image: linear-gradient(rgba(5, 5, 5, 0.6), rgba(5, 5, 5, 0.9)), url('assets/images/hero.png');">
+        <div class="hero-content reveal">
+            <p class="subtitle">AUTORSKA PERFUMERIA</p>
+            <h1>Esencja <br>Czystego Luksusu</h1>
+            <p>Najwyższej jakości perfumy dla kobiet i mężczyzn. Niezapomniane kompozycje oparte na rzadkich,
+                wyselekcjonowanych składnikach prosto z Grasse.</p>
+            <a href="#collection" class="btn btn-primary">Odkryj Kolekcję</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <p>Przewiń</p>
+        </div>
+    </header>
+
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>Wyprodukowano w Grasse</span><span class="dot">•</span>
+            <span>100% Wegańskie</span><span class="dot">•</span>
+            <span>Darmowa dostawa od 300 PLN</span><span class="dot">•</span>
+            <span>Cruelty Free</span><span class="dot">•</span>
+            <span>Najwyższe stężenie zapachu</span><span class="dot">•</span>
+            <span>Wyprodukowano w Grasse</span><span class="dot">•</span>
+            <span>100% Wegańskie</span><span class="dot">•</span>
+            <span>Darmowa dostawa od 300 PLN</span><span class="dot">•</span>
+            <span>Cruelty Free</span><span class="dot">•</span>
+            <span>Najwyższe stężenie zapachu</span><span class="dot">•</span>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-text reveal-left">
+                <span class="section-label">Filozofia Marki</span>
+                <h2>Sztuka Tworzenia Zapachu</h2>
+                <div class="decorative-line"></div>
+                <p>W PerfumeOfHaven wierzymy, że <em>ciche luksusy</em> przemawiają najgłośniej. Nasza marka zrodziła
+                    się z pasji do autentycznej sztuki perfumeryjnej, w której każdy flakon stanowi zamknięte w szkle
+                    dzieło sztuki.</p>
+                <p>Czerpiemy z głębi natury. Wykorzystujemy najwyższej klasy absoluty i olejki eteryczne – od
+                    madagaskarskiej wanilii, po indyjski jaśmin i oud z agaru. Nasz proces maceracji jest długi, co
+                    gwarantuje wyjątkową trwałość i rozwijającą się przez cały dzień projekcję na skórze.</p>
+            </div>
+            <div class="about-image-wrapper reveal-right">
+                <div class="about-image parallax-bg" style="background-image: url('assets/images/ingredients.png');">
+                </div>
+
+                <div class="about-experience-badge">
+                    <span class="years">15</span>
+                    <span class="text">Lat Tradycji<br>Tworzenia</span>
+                </div>
+
+                <div class="about-accent-frame"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="collection" class="collection">
+        <div class="collection-header reveal">
+            <span class="section-label">Twoja Sygnatura</span>
+            <h2 class="section-title">Ekskluzywne Linie Zapachowe</h2>
+            <div class="decorative-line mx-auto"></div>
+        </div>
+        <div class="collection-grid">
+            <!-- Card 1 -->
+            <div class="card reveal delay-1">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/womens.png" alt="Perfumy damskie" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3>Dla Niej</h3>
+                    <p>Subtelne, a zarazem zmysłowe kompozycje. Od świetlistych kwiatów po głębokie, orientalne nuty,
+                        otulające elegancją.</p>
+                    <button class="link-btn open-modal-btn" data-modal="modal-womens">Dowiedz się więcej</button>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card reveal delay-2">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/mens.png" alt="Perfumy męskie" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3>Dla Niego</h3>
+                    <p>Mocne, charyzmatyczne kompozycje stworzone dla współczesnego dżentelmena. Zdecydowane akordy
+                        drzewne i skórzane.</p>
+                    <button class="link-btn open-modal-btn" data-modal="modal-mens">Dowiedz się więcej</button>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card reveal delay-3">
+                <div class="card-img-wrapper">
+                    <img src="assets/images/unisex.png" alt="Perfumy unisex" class="card-img">
+                </div>
+                <div class="card-content">
+                    <h3>Avant-Garde (Unisex)</h3>
+                    <p>Eksperymentalne, nowoczesne połączenia dedykowane indywidualistom. Awangardowe nuty wymykające
+                        się kategoryzacjom płci.</p>
+                    <button class="link-btn open-modal-btn" data-modal="modal-unisex">Dowiedz się więcej</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-wrapper">
+            <div class="contact-box reveal">
+                <span class="section-label">Zapraszamy</span>
+                <h2>Skontaktuj się z nami</h2>
+                <div class="decorative-line mx-auto"></div>
+                <p class="contact-desc">Odwiedź nasz butik stacjonarny i doświadcz świata zapachów na żywo, lub
+                    skontaktuj się z naszymi ekspertami, którzy pomogą dobrać zapach idealny.</p>
+
+                <div class="contact-details">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                <circle cx="12" cy="10" r="3"></circle>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Nasz Butik</h4>
+                            <p>ul. Złota 44<br>00-120 Warszawa</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>Telefon</h4>
+                            <p>+48 123 456 789<br><span class="muted">Pn - Pt: 10:00 - 19:00</span></p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>kontakt@perfumeofhaven.com<br><span class="muted">Odpowiadamy w 24h</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">PerfumeOf<span>Haven</span></div>
+            <p>&copy; <span id="year"></span> PerfumeOfHaven. Kwintesencja luksusu.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal-overlay" id="modal-womens">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image-col">
+                    <img src="assets/images/womens.png" alt="Kolekcja dla Niej">
+                </div>
+                <div class="modal-text-col">
+                    <span class="section-label">Dla Niej</span>
+                    <h2>Kolekcja "Lumière Noire"</h2>
+                    <div class="decorative-line"></div>
+                    <p class="modal-desc">Zmysłowa opowieść utkana z białych kwiatów i orientalnych żywic. Zapach
+                        otwiera się wibrującą świeżością, by po chwili otulić skórę ciepłym, jedwabistym szalem bazy.
+                    </p>
+
+                    <div class="fragrance-notes">
+                        <h4>Piramida Zapachowa</h4>
+                        <ul>
+                            <li><strong>Nuty głowy:</strong> Kalabryjska bergamotka, różowy pieprz, neroli</li>
+                            <li><strong>Nuty serca:</strong> Jaśmin wielkolistny, róża damasceńska, ylang-ylang</li>
+                            <li><strong>Nuty bazy:</strong> Wanilia z Madagaskaru, białe piżmo, drzewo sandałowe</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-action">
+                        <p class="price">450 PLN <span class="capacity">/ 50ml</span></p>
+                        <button class="btn btn-primary btn-sm">Zamów na testy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-mens">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image-col">
+                    <img src="assets/images/mens.png" alt="Kolekcja dla Niego">
+                </div>
+                <div class="modal-text-col">
+                    <span class="section-label">Dla Niego</span>
+                    <h2>Kolekcja "Onyx Reserve"</h2>
+                    <div class="decorative-line"></div>
+                    <p class="modal-desc">Charyzmatyczna, głęboka kompozycja dedykowana nowoczesnemu dżentelmenowi.
+                        Wędzone drewno spotyka się z dymną skórą, tworząc aurę niesamowitego magnetyzmu i pewności
+                        siebie.</p>
+
+                    <div class="fragrance-notes">
+                        <h4>Piramida Zapachowa</h4>
+                        <ul>
+                            <li><strong>Nuty głowy:</strong> Gwatemalski kardamon, czarny pieprz, gorzka cytryna</li>
+                            <li><strong>Nuty serca:</strong> Toskański irys, wędzony wetiwer, liście tytoniu</li>
+                            <li><strong>Nuty bazy:</strong> Skóra, oud (agar), fasolka tonka, bursztyn</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-action">
+                        <p class="price">520 PLN <span class="capacity">/ 50ml</span></p>
+                        <button class="btn btn-primary btn-sm">Zamów na testy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-unisex">
+        <div class="modal-content">
+            <button class="close-btn">&times;</button>
+            <div class="modal-grid">
+                <div class="modal-image-col">
+                    <img src="assets/images/unisex.png" alt="Kolekcja Unisex">
+                </div>
+                <div class="modal-text-col">
+                    <span class="section-label">Avant-Garde</span>
+                    <h2>Kolekcja "Molecule Zero"</h2>
+                    <div class="decorative-line"></div>
+                    <p class="modal-desc">Nowoczesny minimalizm. Surowe, krystaliczne nuty mineralne, które łączą się z
+                        zapachem Twojej własnej skóry, stwarzając całkowicie unikalny, intymny aromat niemożliwy do
+                        podrobienia.</p>
+
+                    <div class="fragrance-notes">
+                        <h4>Piramida Zapachowa</h4>
+                        <ul>
+                            <li><strong>Akord startowy:</strong> Nuty ozonowe, jałowiec, bergamotka</li>
+                            <li><strong>Rdzeń kompozycji:</strong> Izocyjanian, sól morska, szałwia muszkatołowa</li>
+                            <li><strong>Nuty drewna:</strong> Ambroksan, suche drewno cedrowe, piżmo ambrette</li>
+                        </ul>
+                    </div>
+
+                    <div class="modal-action">
+                        <p class="price">490 PLN <span class="capacity">/ 50ml</span></p>
+                        <button class="btn btn-primary btn-sm">Zamów na testy</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
