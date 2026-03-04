@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Miłosz Forystek - Profesjonalny Web Developer. Rozwiązania Backend API C#, aplikacje Blazor, systemy WPF oraz nowoczesne strony WWW.">
+    <meta name="keywords"
+        content="Miłosz Forystek, Web Developer, C#, .NET, Backend, API, Blazor, Razor Pages, WPF, Tworzenie stron internetowych, portfolio">
+    <meta name="author" content="Miłosz Forystek">
+    <title>Miłosz Forystek | Web Developer & Architekt C#</title>
+
+    <!-- Google Fonts: Core Sans + Code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Premium Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Advanced Additions: Custom Cursor & Gradient Glow Follower -->
+    <div id="cursor-glow"></div>
+    <div id="custom-cursor"></div>
+
+    <!-- Premium Background Effects -->
+    <div class="bg-grid"></div>
+    <div id="particles-container"></div>
+
+    <div class="ambient-light light-1"></div>
+    <div class="ambient-light light-2"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-content container">
+            <a href="#home" class="logo">
+                <span class="bracket">&lt;</span>MF<span class="bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Start</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#services">Specjalizacje</a></li>
+                <li><a href="#projects">Realizacje</a></li>
+                <li><a href="#contact" class="btn-nav">Kontakt</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero container">
+            <div class="hero-content">
+                <div class="hero-text reveal-up">
+                    <div class="availability-badge">
+                        <span class="pulse-dot"></span>Dostępny do współpracy
+                    </div>
+
+                    <h1 class="name" data-text="Miłosz Forystek">Miłosz Forystek</h1>
+
+                    <!-- Typing Effect Addition -->
+                    <div class="typing-container">
+                        <span class="static-text">Buduję </span>
+                        <span id="typing-text" class="accent-gradient"></span><span class="cursor">|</span>
+                    </div>
+
+                    <p class="bio-short">
+                        Łączę zaawansowaną inżynierię oprogramowania .NET z pięknymi, responsywnymi interfejsami
+                        webowymi. Tworzę wydajne rozwiązania szyte na miarę.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn-primary">Moje portfolio</a>
+                        <a href="#contact" class="btn-secondary">Porozmawiajmy <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-small">
+                            <span class="num">C# / .NET</span>
+                            <span class="lbl">Backend API</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-small">
+                            <span class="num">Web</span>
+                            <span class="lbl">HTML/CSS/JS</span>
+                        </div>
+                        <div class="stat-divider"></div>
+                        <div class="stat-small">
+                            <span class="num">Desktop</span>
+                            <span class="lbl">WPF & Blazor</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal-up" style="transition-delay: 0.2s;">
+                    <!-- Animated Profile Frame Addition -->
+                    <div class="profile-frame">
+                        <div class="rotating-border"></div>
+                        <div class="profile-inner">
+                            <img src="profile.jpg" alt="Miłosz Forystek" class="profile-img">
+                        </div>
+                    </div>
+
+                    <!-- Decorative floating widgets -->
+                    <div class="float-widget widget-left glass-panel">
+                        <i class="fa-brands fa-microsoft text-accent"></i>
+                        <div class="widget-details">
+                            <span class="w-title">Architektura</span>
+                            <span class="w-sub">C# & SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="float-widget widget-right glass-panel">
+                        <i class="fa-solid fa-code text-accent"></i>
+                        <div class="widget-details">
+                            <span class="w-title">Web Dev</span>
+                            <span class="w-sub">UI/UX & Logika</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack Marquee Addition -->
+        <div class="tech-marquee-wrapper section-padding">
+            <div class="tech-marquee">
+                <div class="marquee-content">
+                    <!-- Tech Items Group 1 -->
+                    <span>C#</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>.NET 8</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>ASP.NET Core</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>Blazor</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>Entity Framework</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>SQL Server</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>WPF / XAML</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>HTML5</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>CSS3</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>JavaScript</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <!-- Repeat for seamless loop -->
+                    <span>C#</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>.NET 8</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>ASP.NET Core</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>Blazor</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>Entity Framework</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>SQL Server</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>WPF / XAML</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>HTML5</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>CSS3</span> <i class="fa-solid fa-star-of-life separator"></i>
+                    <span>JavaScript</span> <i class="fa-solid fa-star-of-life separator"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section id="about" class="about container section-padding">
+            <div class="section-badge reveal-up">Poznajmy się</div>
+            <h2 class="section-title reveal-up">Odlotowe rozwiązania, <br><span class="accent-gradient">inżynieryjna
+                    precyzja.</span></h2>
+
+            <div class="about-grid">
+                <div class="about-text glass-panel reveal-up" style="transition-delay: 0.1s;">
+                    <i class="fa-solid fa-quote-left quote-icon"></i>
+                    <p class="lead-text">Tworzenie stron internetowych traktuję jednocześnie jako formę sztuki oraz
+                        rygorystyczną dyscyplinę techniczną.</p>
+                    <p>Wychodzę z założenia, że nawet najbardziej zaawansowany backend na niewiele się zda bez
+                        intuicyjnego interfejsu. Z tego powodu oferuję <strong>kompleksowe tworzenie stron
+                            internetowych</strong> jako moją główną specjalność. Koncentruję się na detalach wizualnych
+                        jednocześnie dbając o czysty kod, płynność działania i najwyższą wydajność projektu.</p>
+                    <p>Posiadając bogaty warsztat w technologiach Microsoftu, czuję się równie pewnie projektując bazy
+                        danych, logikę biznesową w C#, czy zaawansowane aplikacje okienkowe (WPF), co pozwala mi tworzyć
+                        kompletne systemy od A do Z.</p>
+                </div>
+
+                <div class="expertise-container reveal-up" style="transition-delay: 0.2s;">
+                    <div class="expertise-item glass-panel hover-tilt">
+                        <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+                        <div>
+                            <h3>Nieskazitelna Szybkość</h3>
+                            <p>Moje strony ładują się błyskawicznie i są projektowane z uwzględnieniem najlepszych
+                                praktyk wydajnościowych Web Vitals.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item glass-panel hover-tilt">
+                        <div class="icon-box"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div>
+                            <h3>Solidny Backend C#</h3>
+                            <p>Bezpieczne i stabilne API obsługujące tysiące żądań z wykorzystaniem wzorców
+                                projektowych.</p>
+                        </div>
+                    </div>
+                    <div class="expertise-item glass-panel hover-tilt">
+                        <div class="icon-box"><i class="fa-brands fa-figma"></i></div>
+                        <div>
+                            <h3>Pixel-Perfect Design</h3>
+                            <p>Skrupulatne odwzorowanie projektów graficznych przy użyciu nowoczesnego HTML i CSS.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services container section-padding">
+            <div class="text-center reveal-up">
+                <div class="section-badge">Czym się zajmuję</div>
+                <h2 class="section-title">Technologie dopasowane <br>do <span class="accent-gradient">Twoich
+                        celów</span></h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Main Feature Box -->
+                <div class="bento-box bento-large glass-panel hover-glow reveal-up">
+                    <div class="box-content">
+                        <div class="icon-box large-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Tworzenie Stron Webowych</h3>
+                        <p>Kluczowa gałąź moich usług. Projektuję i programuję nowoczesne, interaktywne witryny
+                            wizerunkowe, portale oraz platformy, które przyciągają uwagę swoim designem (takim jak ten)
+                            i nienaganną płynnością.</p>
+                        <div class="tech-tags mt-auto">
+                            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Backend
+                                Integrations</span>
+                        </div>
+                    </div>
+                    <!-- Decorative element inside the main box -->
+                    <div class="bento-decoration">
+                        <div class="mockup-browser">
+                            <div class="browser-header"><i></i><i></i><i></i></div>
+                            <div class="browser-body">
+                                <div class="mockbox mx-w-1"></div>
+                                <div class="mockbox mx-w-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smaller Boxes -->
+                <div class="bento-box glass-panel hover-glow reveal-up" style="transition-delay: 0.1s;">
+                    <div class="icon-box"><i class="fa-solid fa-server"></i></div>
+                    <h3>Backend API C#</h3>
+                    <p>Odporne mikroserwisy i monolityczne środowiska w ASP.NET Core z podziałem na role, JWT i czystą
+                        architekturą.</p>
+                </div>
+
+                <div class="bento-box glass-panel hover-glow reveal-up" style="transition-delay: 0.2s;">
+                    <div class="icon-box"><i class="fa-brands fa-microsoft"></i></div>
+                    <h3>Blazor / Razor</h3>
+                    <p>Zaawansowane aplikacje Web zagnieżdżające logikę C# bezpośrednio w przeglądarce klienta (WASM)
+                        lub po stronie serwera.</p>
+                </div>
+
+                <div class="bento-box glass-panel hover-glow reveal-up" style="transition-delay: 0.3s;">
+                    <div class="icon-box"><i class="fa-solid fa-desktop"></i></div>
+                    <h3>Programy WPF</h3>
+                    <p>Wydajne i kompleksowe aplikacje natywne dla systemów Windows z rozbudowanymi interfejsami w
+                        języku XAML.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects container section-padding">
+            <div class="text-center reveal-up">
+                <div class="section-badge">Portfolio</div>
+                <h2 class="section-title">Przykładowe <span class="accent-gradient">Projekty</span></h2>
+            </div>
+
+            <div class="projects-showcase">
+                <!-- Highlighted Project -->
+                <div class="project-featured glass-panel reveal-up">
+                    <div class="p-featured-image hover-tilt">
+                        <img src="file:///C:/Users/milos/KwiatyUBasi/assets/images/hero_banner.png" alt="Kwiaty U Basi"
+                            onerror="this.src='https://images.unsplash.com/photo-1596526131083-e8c638c9c6c7?q=80&w=800&h=500&auto=format&fit=crop';">
+                        <div class="p-overlay">
+                            <a href="C:\Users\milos\KwiatyUBasi\index.html" class="p-btn"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Otwórz projekt</a>
+                        </div>
+                    </div>
+                    <div class="p-featured-info">
+                        <div class="p-category">Strona Wizerunkowa / Frontend</div>
+                        <h3>Kwiaciarnia "Kwiaty U Basi"</h3>
+                        <p>Responsywna, elegancka wizytówka sieci kwiaciarni z wdrożonym systemem generowania
+                            opadających płatków w locie. Całość zoptymalizowana pod bardzo szybkie ładowanie</p>
+                        <div class="tech-tags">
+                            <span>Vanilla JS</span><span>CSS Animations</span><span>HTML5 Semantics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Projects -->
+                <div class="project-grid-2">
+                    <div class="project-standard glass-panel hover-glow reveal-up" style="transition-delay: 0.1s;">
+                        <div class="p-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                        </div>
+                        <h3>Architektura API</h3>
+                        <p>Rozbudowany system do fakturowania i zarządzania stanem magazynowym z architekturą opartą na
+                            komendach (CQRS). Autoryzacja i logowanie zdarzeń audytowych.</p>
+                        <div class="tech-tags mt-auto pb-0">
+                            <span>ASP.NET Core</span><span>MediatR</span><span>SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="project-standard glass-panel hover-glow reveal-up" style="transition-delay: 0.2s;">
+                        <div class="p-header">
+                            <i class="fa-regular fa-folder-open folder-icon"></i>
+                        </div>
+                        <h3>Pulpit Przemysłowy WPF</h3>
+                        <p>Rozwiązanie okienkowe przeznaczone do monitorowania czujników w fabryce. Płynne, odświeżane
+                            na żywo wykresy i komunikacja po gniazdach (Sockets).</p>
+                        <div class="tech-tags mt-auto pb-0">
+                            <span>WPF</span><span>XAML</span><span>.NET 8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact container section-padding">
+            <div class="contact-card glass-panel reveal-up">
+
+                <div class="c-info">
+                    <div class="section-badge mb-1">Skontaktuj się ze mną</div>
+                    <h2 class="section-title text-start mb-2">Rozpocznijmy <br><span class="accent-gradient">nowy
+                            projekt.</span></h2>
+                    <p class="mb-3">Szukasz programisty, który stworzy od zera nienaganną pod względem designu stronę
+                        lub zaprogramuje solidny fundament backendowy w Twojej firmie? Zostaw wiadomość.</p>
+
+                    <ul class="c-methods">
+                        <li>
+                            <div class="c-icon"><i class="fa-solid fa-at"></i></div>
+                            <div class="c-text">
+                                <span class="c-label">Napisz e-mail</span>
+                                <a href="mailto:miloszforystek@gmail.com">miloszforystek@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="c-text">
+                                <span class="c-label">Zadzwoń bezpośrednio</span>
+                                <a href="tel:+48695385465">695 385 465</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="c-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                            <div class="c-text">
+                                <span class="c-label">Nawiążmy kontakt</span>
+                                <a href="https://www.linkedin.com/in/mi%C5%82osz-forystek-0b20862b1/" target="_blank"
+                                    rel="noopener noreferrer">Miłosz Forystek na LinkedIn</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-flex">
+            <div class="f-logo">
+                <span class="bracket">&lt;</span>MF<span class="bracket">/&gt;</span>
+            </div>
+            <div class="f-copyright">
+                <p>&copy; 2026 <strong>Miłosz Forystek</strong>. Zbudowano z pasją z HTML, CSS i JS.</p>
+            </div>
+            <div class="f-socials">
+                <a href="https://www.linkedin.com/in/miłosz-forystek-0b20862b1/" class="social-link"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
