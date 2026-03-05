@@ -1487,3 +1487,18 @@ a {
         align-items: center;
     }
 }
+
+/* --- MOBILE HORIZONTAL OUT OF BOUNDS SWIPE FIX --- */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden !important;
+    overscroll-behavior-x: none;
+}
+
+section,
+footer,
+.hero {
+    max-width: 100%;
+    overflow-x: hidden;
+}
