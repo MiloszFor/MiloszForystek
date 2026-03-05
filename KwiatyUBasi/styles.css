@@ -58,14 +58,21 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
 }
 
 body {
   font-family: var(--font-body);
-  color: var(--color-text);
   background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
   overflow-x: hidden;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  max-width: 100%;
   cursor: none;
 }
 
