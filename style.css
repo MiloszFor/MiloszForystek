@@ -450,9 +450,11 @@ a {
 .hero-content {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    justify-content: center;
+    gap: 3rem;
     width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
     z-index: 10;
 }
 
@@ -461,7 +463,8 @@ a {
 }
 
 .availability-badge {
-    display: inline-flex;
+    display: flex;
+    width: fit-content;
     align-items: center;
     gap: 8px;
     padding: 6px 14px;
@@ -1375,6 +1378,10 @@ a {
     .hero-actions a {
         width: 100%;
         text-align: center;
+    }
+
+    .availability-badge {
+        margin: 0 auto 1.5rem auto;
     }
 
     .hero-stats {
