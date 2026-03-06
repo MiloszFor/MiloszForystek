@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omega Detailing | Premium Car Care</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <span class="logo-icon"><i class="fa-solid fa-shield-halved"></i></span>
+            <span class="logo-text">OMEGA</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#hero">Start</a></li>
+            <li><a href="#innovations">Technologie</a></li>
+            <li><a href="#services">Usługi</a></li>
+            <li><a href="#about">Studio</a></li>
+            <li><a href="#contact" class="btn-primary">Umów Wizytę</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg">
+                <img src="assets/hero_bg.png" alt="Luxury Car Detailing" id="heroImage">
+                <div class="hero-overlay"></div>
+            </div>
+
+            <!-- Floating Dust/Sparks Effect -->
+            <div class="particles-container" id="particlesContainer"></div>
+
+            <div class="hero-content">
+                <div class="badge fade-in">Ekskluzywna Pielęgnacja Pojazdów</div>
+                <h1 class="fade-in">Perfekcja w <br><span class="accent">Najmniejszym</span> Detalu</h1>
+                <p class="fade-in">Odblokuj pełen potencjał swojego samochodu z najnowocześniejszymi technologiami na
+                    rynku. Powłoki grafenowe, samoregenerujące się folie PPF i czyszczenie suchym lodem.</p>
+                <div class="hero-cta fade-in">
+                    <a href="#innovations" class="btn-outline">Odkryj Nowości</a>
+                </div>
+            </div>
+
+            <div class="scroll-indicator fade-in">
+                <span>Scroll</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- Stats Bar Section -->
+        <section class="stats-bar section-padding">
+            <div class="container reveal">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="number" data-target="1500">0</span><span class="suffix">+</span>
+                        <span class="label">Zabezpieczonych Aut</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="number" data-target="5">0</span><span class="suffix"> Lat</span>
+                        <span class="label">Gwarancji na Powłoki</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="number" data-target="9">0</span><span class="suffix">H</span>
+                        <span class="label">Twardość Ołówkowa</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="number" data-target="100">0</span><span class="suffix">%</span>
+                        <span class="label">Prywatności Klienta</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Infinite Marquee -->
+        <div class="marquee-wrapper">
+            <div class="marquee-content">
+                <span>OCHRONA LAKIERU</span> <i class="fa-solid fa-plus separator"></i>
+                <span>RENOWACJA</span> <i class="fa-solid fa-plus separator"></i>
+                <span>POWŁOKI GRAFENOWE</span> <i class="fa-solid fa-plus separator"></i>
+                <span>FOLIE PPF</span> <i class="fa-solid fa-plus separator"></i>
+                <span>AUTO DETAILING</span> <i class="fa-solid fa-plus separator"></i>
+                <span>DRY ICE CLEANING</span> <i class="fa-solid fa-plus separator"></i>
+                <!-- Duplicated for seamless loop -->
+                <span>OCHRONA LAKIERU</span> <i class="fa-solid fa-plus separator"></i>
+                <span>RENOWACJA</span> <i class="fa-solid fa-plus separator"></i>
+                <span>POWŁOKI GRAFENOWE</span> <i class="fa-solid fa-plus separator"></i>
+                <span>FOLIE PPF</span> <i class="fa-solid fa-plus separator"></i>
+                <span>AUTO DETAILING</span> <i class="fa-solid fa-plus separator"></i>
+                <span>DRY ICE CLEANING</span> <i class="fa-solid fa-plus separator"></i>
+            </div>
+        </div>
+
+        <!-- Innovations Section (Novelties) -->
+        <section id="innovations" class="innovations section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="subtitle">Przyszłość Kosmetyki Samochodowej</span>
+                    <h2>Rewolucyjne <span class="accent">Technologie</span></h2>
+                </div>
+
+                <div class="cards-grid">
+                    <!-- Graphene Coating -->
+                    <div class="card reveal hover-tilt">
+                        <div class="card-icon"><i class="fa-solid fa-gem"></i></div>
+                        <div class="card-content">
+                            <h3>Powłoki Grafenowe</h3>
+                            <p>Ewolucja powłok ceramicznych. Oferują niespotykaną wcześniej redukcję nagrzewania się
+                                lakieru (odpychają promienie UV zmniejszając podatność na water spoty) oraz głęboką,
+                                szklistą powłokę.</p>
+                            <ul class="features-list">
+                                <li><i class="fa-solid fa-check"></i> Trwałość do 5 lat</li>
+                                <li><i class="fa-solid fa-check"></i> Ekstremalna hydrofobowość</li>
+                                <li><i class="fa-solid fa-check"></i> Odporność antystatyczna</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- PPF -->
+                    <div class="card reveal hover-tilt">
+                        <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="card-content">
+                            <h3>Folie PPF Self-Healing</h3>
+                            <p>Mikrozarysowania to przeszłość. Nasze najnowsze folie poliuretanowe mają zdolność do
+                                samoregeneracji pod wpływem ciepła. Niewidzialna tarcza dla najdroższych elementów.</p>
+                            <ul class="features-list">
+                                <li><i class="fa-solid fa-check"></i> Samoregeneracja rys</li>
+                                <li><i class="fa-solid fa-check"></i> Ochrona przed odpryskami</li>
+                                <li><i class="fa-solid fa-check"></i> Wysoki połysk (lub mat)</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Dry Ice -->
+                    <div class="card reveal hover-tilt">
+                        <div class="card-icon"><i class="fa-solid fa-snowflake"></i></div>
+                        <div class="card-content">
+                            <h3>Czyszczenie Suchym Lodem</h3>
+                            <p>Całkowicie bezwodna instalacja. Granulki CO2 uderzają w brud, natychmiast sublimując.
+                                Absolutnie bezpieczne dla elektroniki, silnika i delikatnych elementów.</p>
+                            <ul class="features-list">
+                                <li><i class="fa-solid fa-check"></i> Bezinwazyjne czyszczenie podwozia</li>
+                                <li><i class="fa-solid fa-check"></i> Bez użycia żrącej chemii</li>
+                                <li><i class="fa-solid fa-check"></i> Idealne dla klasyków</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Studio Section -->
+        <section id="about" class="about-studio section-padding">
+            <div class="container about-grid">
+                <div class="about-visual reveal">
+                    <div class="image-wrapper">
+                        <img src="assets/about_studio.png" alt="Omega Detailing Studio Interior" id="aboutImage"
+                            onerror="this.src='https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=1000&auto=format&fit=crop';">
+                        <div class="about-badge">
+                            <i class="fa-solid fa-star"></i>
+                            <span>Premium Quality</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <span class="subtitle">Poznaj Nasze Studio</span>
+                    <h2>Sztuka <span class="accent">Motoryzacji</span></h2>
+                    <p class="lead">Traktujemy każdy pojazd nie jak zbiór elementów mechanicznych, a jak unikalne dzieło
+                        sztuki wymagające niezwykłej precyzji.</p>
+                    <p>Założone z myślą o najbardziej wymagających entuzjastach, Omega Detailing łączy pasję do
+                        motoryzacji z najnowocześniejszymi osiągnięciami chemii zabezpieczającej. Nasze studio zostało
+                        zaprojektowane by zapewnić sterylną czystość i optymalne oświetlenie niezbędne do bezbłędnej
+                        aplikacji powłok.</p>
+
+                    <ul class="about-list">
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Certyfikowani instalatorzy czołowych powłok
+                                na świecie.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Dedykowana strefa z optymalną kontrolą
+                                wilgotności.</span></li>
+                        <li><i class="fa-solid fa-circle-check"></i> <span>Bezpłatna inspekcja powłoki
+                                lakierniczej.</span></li>
+                    </ul>
+                    <a href="#contact" class="btn-primary mt-30">Umów Inspekcję</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Media / Before After preview (Visual flair) -->
+        <section class="visual-break">
+            <div class="parallax-bg" style="background-image: url('assets/parallax_bg.png');">
+            </div>
+            <div class="visual-content container reveal">
+                <h2>Czyste Bliźniacze Odbicie.</h2>
+                <p>Niezrównany blask. Zero kompromisów.</p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="number" data-target="9H">0</span>
+                        <span class="label">Twardość Ołówkowa</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number" data-target="150+">0</span>
+                        <span class="label">Zrealizowanych Superaut</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="number" data-target="5">0</span>
+                        <span class="label">Lat Gwarancji na Powłoki</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exclusive Packages Section -->
+        <section id="services" class="packages-section section-padding bg-main">
+            <div class="container text-center">
+                <div class="section-header reveal">
+                    <span class="subtitle">Wybierz Swój Poziom Ochrony</span>
+                    <h2>Pakiety <span class="accent">Detailingowe</span></h2>
+                </div>
+
+                <div class="packages-grid">
+                    <!-- Silver -->
+                    <div class="pack-card glass-panel reveal hover-glow">
+                        <div class="pack-header">
+                            <h3>Signature</h3>
+                            <div class="price">od 1 500 PLN</div>
+                        </div>
+                        <ul class="pack-features">
+                            <li><i class="fa-solid fa-check"></i> Wieloetapowe mycie SPA</li>
+                            <li><i class="fa-solid fa-check"></i> Jednoetapowa korekta lakieru (One-Step)</li>
+                            <li><i class="fa-solid fa-check"></i> Powłoka ceramiczna 2-letnia</li>
+                            <li><i class="fa-solid fa-check"></i> Podstawowy detailing wnętrza</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline" style="width: 100%;">Wybierz Pakiet</a>
+                    </div>
+
+                    <!-- Gold (Highlighted) -->
+                    <div class="pack-card premium-pack glass-panel reveal" style="transition-delay: 0.1s;">
+                        <div class="pack-badge">Najczęściej Wybierany</div>
+                        <div class="pack-header">
+                            <h3>Prestige <i class="fa-solid fa-gem accent"></i></h3>
+                            <div class="price accent">od 3 500 PLN</div>
+                        </div>
+                        <ul class="pack-features">
+                            <li><i class="fa-solid fa-check"></i> Wszystko co w Signature</li>
+                            <li><i class="fa-solid fa-check"></i> Pełna, dwuetapowa korekta lakieru</li>
+                            <li><i class="fa-solid fa-check"></i> Powłoka grafenowa 5-letnia</li>
+                            <li><i class="fa-solid fa-check"></i> Niewidzialna wycieraczka na szyby</li>
+                            <li><i class="fa-solid fa-check"></i> Zabezpieczenie frontów felg</li>
+                        </ul>
+                        <a href="#contact" class="btn-primary" style="width: 100%;">Wybierz Pakiet</a>
+                    </div>
+
+                    <!-- Platinum -->
+                    <div class="pack-card glass-panel reveal hover-glow" style="transition-delay: 0.2s;">
+                        <div class="pack-header">
+                            <h3>Absolute</h3>
+                            <div class="price">od 8 000 PLN</div>
+                        </div>
+                        <ul class="pack-features">
+                            <li><i class="fa-solid fa-check"></i> Wszystko co w Prestige</li>
+                            <li><i class="fa-solid fa-check"></i> Zabezpieczenie frontu folią PPF</li>
+                            <li><i class="fa-solid fa-check"></i> Dekontaminacja suchym lodem</li>
+                            <li><i class="fa-solid fa-check"></i> Pełna impregnacja skór i wnętrza</li>
+                        </ul>
+                        <a href="#contact" class="btn-outline" style="width: 100%;">Wybierz Pakiet</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="cta-section section-padding">
+            <div class="container glass-panel reveal">
+                <div class="cta-content">
+                    <h2>Gotowy na Transformację?</h2>
+                    <p>Zarezerwuj termin konsultacji. Skontaktuj się z nami bezpośrednio, a odpowiemy na każde pytanie i
+                        dobierzemy idealny pakiet dla Twojego pojazdu.</p>
+
+                    <div class="contact-details-grid mt-30">
+                        <div class="c-box hover-tilt">
+                            <div class="c-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <h4>Nasza Świątynia</h4>
+                            <p>ul. Złota 44<br>00-120 Warszawa</p>
+                        </div>
+                        <div class="c-box hover-tilt">
+                            <div class="c-icon"><i class="fa-solid fa-phone-volume"></i></div>
+                            <h4>Infolinia Premium</h4>
+                            <p><a href="tel:+48500600700" class="contact-link">+48 500 600 700</a></p>
+                        </div>
+                        <div class="c-box hover-tilt">
+                            <div class="c-icon"><i class="fa-regular fa-envelope"></i></div>
+                            <h4>E-mail</h4>
+                            <p><a href="mailto:kontakt@omegadetailing.pl"
+                                    class="contact-link">kontakt@omegadetailing.pl</a></p>
+                        </div>
+                        <div class="c-box hover-tilt">
+                            <div class="c-icon"><i class="fa-regular fa-clock"></i></div>
+                            <h4>Godziny</h4>
+                            <p>Pon - Pt: 09:00 - 19:00<br>Sobota: Zapisy VIP</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="f-brand">
+                <h3><i class="fa-solid fa-shield-halved"></i> OMEGA</h3>
+                <p>Premium Detailing Studio</p>
+            </div>
+            <div class="f-socials">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 OMEGA Detailing. Designed by Miłosz Forystek.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
