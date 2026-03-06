@@ -1,0 +1,17 @@
+<svg xmlns="http://www.কির.org/2000/svg" viewBox="0 0 512 512">
+    <!-- Tło w kolorze dark mode strony (opcjonalne, można ustawić 'fill="none"' by było przeźroczyste, ale tu chcemy kontrast z MF) -->
+    <rect width="512" height="512" rx="100" fill="#0A0A0C" />
+    
+    <!-- Lewy nawias < -->
+    <path d="M150 256 L200 176 L175 160 L100 256 L175 352 L200 336 Z" fill="#00e5ff" />
+    
+    <!-- M -->
+    <path d="M210 336 V176 H245 L275 266 L305 176 H340 V336 H315 V226 L285 316 H265 L235 226 V336 Z" fill="#ffffff" />
+    
+    <!-- F -->
+    <path d="M355 336 V176 H415 V201 H385 V241 H405 V266 H385 V336 Z" fill="#ffffff" />
+    
+    <!-- Prawy nawias > z uwzględnieniem skośnego ukośnika / -->
+    <!-- Ukośnik / -->
+    <path d="M435 346 L475 166 L495 166 L455 346 Z" fill="#00e5ff" />
+</svg>
