@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KwiatyUEli - Wyjątkowa Kwiaciarnia na Warszawskiej 1</title>
+    <meta name="description"
+        content="Kwiaciarnia KwiatyUEli oferuje najpiękniejsze bukiety, wiązanki okolicznościowe i dekoracje florystyczne. Odwiedź nas na ul. Warszawskiej 1. Profesjonalna obsługa, świeże kwiaty.">
+    <meta name="keywords"
+        content="kwiaciarnia, KwiatyUEli, kwiaty, bukiety, Warszawa 1, kwiaciarnia Warszawa, wiązanki, dekoracje kwiatowe, flora">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="KwiatyUEli - Wyjątkowa Kwiaciarnia">
+    <meta property="og:description"
+        content="Najpiękniejsze kompozycje kwiatowe dla Ciebie i Twoich bliskich na Warszawskiej 1.">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- LocalBusiness Schema JSON-LD dla pozycjonowania w Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Florist",
+      "name": "KwiatyUEli",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Warszawa 1",
+        "addressLocality": "Warszawa",
+        "addressCountry": "PL"
+      },
+      "telephone": "+48999111222",
+      "taxID": "1111111",
+      "description": "Najwyższej jakości kompozycje florystyczne, kwiaty cięte, doniczkowe oraz obsługa imprez okolicznościowych na ulicy Warszawskiej.",
+      "openingHours": "Mo-Fr 08:00-18:00, Sa 08:00-14:00"
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Custom cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Kwiaty<span>UEli</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">O Nas</a></li>
+                    <li><a href="#advantages" class="nav-link">Dlaczego My</a></li>
+                    <li><a href="#offer" class="nav-link">Oferta</a></li>
+                    <li><a href="#gallery" class="nav-link">Galeria</a></li>
+                    <li><a href="#testimonials" class="nav-link">Opinie</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-overlay"></div>
+            <!-- Animowane płatki -->
+            <div class="petals-container" id="petalsContainer"></div>
+            <div class="hero-content fade-in">
+                <div class="hero-tag">🌸 Warszawa 1</div>
+                <h1>Sztuka układania<br><em>emocji</em></h1>
+                <p>Odkryj magię świeżych kwiatów, które mówią więcej niż tysiąc słów. Stworzymy dla Ciebie niezapomniane
+                    kompozycje.</p>
+                <div class="hero-buttons">
+                    <a href="#offer" class="btn btn-primary">Nasza oferta</a>
+                    <a href="#contact" class="btn btn-ghost">Skontaktuj się</a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Przewiń w dół</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- Stats Bar -->
+        <section class="stats-bar">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Lat doświadczenia</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="2800">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Zadowolonych klientów</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="350">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Śluby i uroczystości</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="60">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Gatunków kwiatów</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container grid-2-col">
+                <div class="about-img-wrapper slide-in-left">
+                    <img src="assets/images/shop_interior.png" alt="Wnętrze kwiaciarni KwiatyUEli" class="about-img">
+                    <div class="about-img-badge">
+                        <span>💐</span>
+                        <strong>Świeże kwiaty</strong>
+                        <em>każdego dnia</em>
+                    </div>
+                </div>
+                <div class="about-text slide-in-right">
+                    <div class="section-tag">Nasza historia</div>
+                    <h2 class="section-title">Pasja, która<br>rozkwita</h2>
+                    <p>Za każdym naszym bukietem kryje się historia, miłość do detali i wieloletnie doświadczenie. W
+                        kwiaciarni "KwiatyUEli" nie tylko sprzedajemy kwiaty – my tworzymy z nich dzieła sztuki,
+                        które uświetniają najważniejsze momenty w życiu naszych klientów.</p>
+                    <p>Zapraszamy do naszego pełnego aromatów i kolorów wnętrza przy ulicy <strong>Warszawska
+                            1</strong>,
+                        gdzie każdy znajdzie kwiaty idealne na każdą okazję.</p>
+                    <div class="opening-hours">
+                        <div class="hours-item">
+                            <span class="hours-icon">⏰</span>
+                            <div>
+                                <strong>Pon–Pt</strong>
+                                <span>08:00 – 18:00</span>
+                            </div>
+                        </div>
+                        <div class="hours-item">
+                            <span class="hours-icon">⏰</span>
+                            <div>
+                                <strong>Sobota</strong>
+                                <span>08:00 – 14:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seasonal Flower Highlight -->
+        <section class="seasonal section bg-accent" id="seasonal">
+            <div class="container">
+                <div class="seasonal-inner">
+                    <div class="seasonal-text fade-in">
+                        <div class="section-tag tag-light">Nowość sezonu</div>
+                        <h2 class="section-title">
+                            <span class="seasonal-title-label">Kwiat miesiąca:</span>
+                            <em id="flowerName">Piwonia</em>
+                        </h2>
+                        <p class="text-light-soft">Delikatne, wielopłatkowe piwonie to symbol luksusu i kobiecości.
+                            Dostępne teraz w wyjątkowych odcieniach różu, bieli i łososia.</p>
+                        <a href="#contact" class="btn btn-petal">Skontaktuj się</a>
+                    </div>
+                    <div class="seasonal-visual fade-in">
+                        <div class="flower-showcase">
+                            <div class="flower-ring ring-1"></div>
+                            <div class="flower-ring ring-2"></div>
+                            <div class="flower-ring ring-3"></div>
+                            <img src="assets/images/bouquet_peonies.png" alt="Kwiat sezonu - Piwonia" class="flower-img"
+                                id="seasonalFlowerImg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Advantages Section -->
+        <section class="advantages section" id="advantages">
+            <div class="container text-center">
+                <div class="section-tag text-center-tag">Nasze wartości</div>
+                <h2 class="section-title fade-in">Dlaczego warto<br>nas wybrać?</h2>
+                <div class="grid-4-col advantages-grid">
+                    <div class="advantage-card fade-in">
+                        <div class="advantage-icon-wrap">
+                            <div class="advantage-icon">⭐</div>
+                        </div>
+                        <h3>Najwyższa Jakość</h3>
+                        <p>Sprowadzamy kwiaty tylko od sprawdzonych, najlepszych dostawców.</p>
+                    </div>
+                    <div class="advantage-card fade-in" style="transition-delay: 0.1s">
+                        <div class="advantage-icon-wrap">
+                            <div class="advantage-icon">🎨</div>
+                        </div>
+                        <h3>Kreatywność</h3>
+                        <p>Nasze kompozycje wyróżniają się unikalnym i nowoczesnym designem.</p>
+                    </div>
+                    <div class="advantage-card fade-in" style="transition-delay: 0.2s">
+                        <div class="advantage-icon-wrap">
+                            <div class="advantage-icon">🚚</div>
+                        </div>
+                        <h3>Dostawa na czas</h3>
+                        <p>Zapewniamy terminowe doręczenie bukietów pod wskazany adres.</p>
+                    </div>
+                    <div class="advantage-card fade-in" style="transition-delay: 0.3s">
+                        <div class="advantage-icon-wrap">
+                            <div class="advantage-icon">❤️</div>
+                        </div>
+                        <h3>Pasja i Serce</h3>
+                        <p>Wkładamy całe zaangażowanie w każdy, nawet najmniejszy bukiet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Offer Section -->
+        <section class="offer section bg-light" id="offer">
+            <div class="container text-center">
+                <div class="section-tag text-center-tag">Co robimy</div>
+                <h2 class="section-title fade-in">Co oferujemy</h2>
+                <div class="grid-3-col offer-grid">
+                    <div class="offer-card fade-in">
+                        <div class="offer-icon-wrap">
+                            <div class="offer-icon">💐</div>
+                        </div>
+                        <h3>Bukiety okolicznościowe</h3>
+                        <p>Zawsze świeże, komponowane z dbałością o każdy detal bukiety na urodziny, rocznice i inne
+                            wyjątkowe okazje.</p>
+                        <button class="offer-link" data-modal="modal-bouquets" aria-haspopup="dialog">Dowiedz się więcej
+                            →</button>
+                    </div>
+                    <div class="offer-card fade-in" style="transition-delay: 0.2s">
+                        <div class="offer-icon-wrap">
+                            <div class="offer-icon">💒</div>
+                        </div>
+                        <h3>Florystyka ślubna</h3>
+                        <p>Wiązanki ślubne, dekoracje sal i kościołów oraz wystrój samochodów. Sprawimy, że Ten Dzień
+                            będzie piękny.</p>
+                        <button class="offer-link" data-modal="modal-wedding" aria-haspopup="dialog">Dowiedz się więcej
+                            →</button>
+                    </div>
+                    <div class="offer-card fade-in" style="transition-delay: 0.4s">
+                        <div class="offer-icon-wrap">
+                            <div class="offer-icon">🌿</div>
+                        </div>
+                        <h3>Kwiaty doniczkowe</h3>
+                        <p>Bogaty wybór roślin domowych i tarasowych, porady w pielęgnacji oraz eleganckie donice i
+                            osłonki.</p>
+                        <button class="offer-link" data-modal="modal-plants" aria-haspopup="dialog">Dowiedz się więcej
+                            →</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How To Order Section -->
+        <section class="how-to section" id="how-to">
+            <div class="container">
+                <div class="how-to-header text-center">
+                    <div class="section-tag text-center-tag">Prosto i wygodnie</div>
+                    <h2 class="section-title fade-in">Jak zamówić<br><em>kwiaty?</em></h2>
+                </div>
+                <div class="steps-grid">
+                    <div class="step-card fade-in">
+                        <div class="step-number">01</div>
+                        <div class="step-icon">📞</div>
+                        <h3>Skontaktuj się</h3>
+                        <p>Zadzwoń do nas lub odwiedź sklep. Opowiedz nam o okazji, preferencjach kolorystycznych i
+                            budżecie.</p>
+                    </div>
+                    <div class="step-connector fade-in" style="transition-delay:0.15s"></div>
+                    <div class="step-card fade-in" style="transition-delay:0.2s">
+                        <div class="step-number">02</div>
+                        <div class="step-icon">🎨</div>
+                        <h3>Tworzymy razem</h3>
+                        <p>Nasz florystka dobiera kwiaty i komponuje bukiet według Twoich życzeń. Dbamy o każdy detal.
+                        </p>
+                    </div>
+                    <div class="step-connector fade-in" style="transition-delay:0.35s"></div>
+                    <div class="step-card fade-in" style="transition-delay:0.4s">
+                        <div class="step-number">03</div>
+                        <div class="step-icon">💐</div>
+                        <h3>Odbierz lub dostawa</h3>
+                        <p>Gotowy bukiet możesz odebrać osobiście lub zamówić dostawę pod wskazany adres tego samego
+                            dnia.</p>
+                    </div>
+                </div>
+                <div class="how-to-cta text-center fade-in">
+                    <p class="how-to-note">Realizujemy zamówienia ekspresowe — zadzwoń nawet godzinę przed!</p>
+                    <a href="tel:+48999111222" class="btn btn-primary">📞 Zadzwoń teraz: 999 111 222</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quote Banner -->
+        <section class="quote-banner">
+            <div class="quote-banner-bg"></div>
+            <div class="container">
+                <blockquote class="pull-quote fade-in">
+                    <p>"Kwiaty są słowami, których nie potrafi wyrazić język."</p>
+                    <cite>— William Blake</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery section" id="gallery">
+            <div class="container">
+                <div class="section-tag text-center-tag">Nasze prace</div>
+                <h2 class="section-title text-center fade-in">Nasze realizacje</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item gallery-tall fade-in">
+                        <img src="assets/images/bouquet_peonies.png" alt="Piękny bukiet piwonii">
+                        <div class="gallery-overlay"><span>Bukiety Nowoczesne</span></div>
+                    </div>
+                    <div class="gallery-item fade-in" style="transition-delay:0.1s">
+                        <img src="assets/images/wedding_bouquet.png" alt="Ślubna wiązanka z piwonii i eukaliptusa">
+                        <div class="gallery-overlay"><span>Florystyka Ślubna</span></div>
+                    </div>
+                    <div class="gallery-item fade-in" style="transition-delay:0.2s">
+                        <img src="assets/images/bouquet_roses.png" alt="Klasyczny bukiet czerwonych róż">
+                        <div class="gallery-overlay"><span>Klasyczna Elegancja</span></div>
+                    </div>
+                    <div class="gallery-item fade-in" style="transition-delay:0.3s">
+                        <img src="assets/images/potted_plants.png" alt="Kwiaty doniczkowe i sukulenty">
+                        <div class="gallery-overlay"><span>Kwiaty Doniczkowe</span></div>
+                    </div>
+                    <div class="gallery-item fade-in" style="transition-delay:0.4s">
+                        <img src="assets/images/florist_working.png" alt="Florystka przy pracy">
+                        <div class="gallery-overlay"><span>Nasza Pracownia</span></div>
+                    </div>
+                    <div class="gallery-item fade-in" style="transition-delay:0.5s">
+                        <img src="assets/images/shop_exterior2.png" alt="Wnętrze kwiaciarni KwiatyUEli">
+                        <div class="gallery-overlay"><span>Nasze Wnętrza</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials section bg-light" id="testimonials">
+            <div class="container">
+                <div class="section-tag text-center-tag">Referencje</div>
+                <h2 class="section-title text-center fade-in">Co mówią nasi klienci</h2>
+                <div class="testimonials-wrapper">
+                    <div class="grid-3-col testimonials-grid">
+                        <div class="testimonial-card fade-in">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">Wspaniała kwiaciarnia! Zamówiłam bukiet na rocznicę dla rodziców
+                                i
+                                byli zachwyceni. Kwiaty utrzymywały świeżość przez ponad tydzień. Na pewno tu wrócę.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">AN</div>
+                                <div>
+                                    <strong>Anna Nowak</strong>
+                                    <span>Klientka</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card fade-in" style="transition-delay: 0.2s">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">Profesjonalne podejście i ogromne wyczucie smaku. Dekoracje
+                                weselne
+                                przeszły nasze najśmielsze oczekiwania. Dziękujemy z całego serca!</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">MP</div>
+                                <div>
+                                    <strong>Marta i Piotr</strong>
+                                    <span>Para Młoda</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-card fade-in" style="transition-delay: 0.4s">
+                            <div class="stars">★★★★★</div>
+                            <p class="testimonial-text">Zawsze świeże kwiaty i niesamowite kompozycje, których nie
+                                znajdzie
+                                się nigdzie indziej w mieście. Obsługa zawsze uśmiechnięta i chętna do pomocy.</p>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">JK</div>
+                                <div>
+                                    <strong>Jan Kowalski</strong>
+                                    <span>Stały Klient</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section bg-accent" id="contact">
+            <div class="container grid-2-col">
+                <div class="contact-info slide-in-left">
+                    <div class="section-tag tag-light">Gdzie nas znaleźć</div>
+                    <h2 class="section-title">Skontaktuj się<br>z nami</h2>
+                    <p class="text-light-soft">Odwiedź nas i opowiedz, jakich kwiatów potrzebujesz. Jesteśmy tu dla
+                        Ciebie.
+                    </p>
+
+                    <ul class="contact-list">
+                        <li>
+                            <i class="contact-icon">📍</i>
+                            <div>
+                                <strong>Adres</strong>
+                                <span>Warszawa 1</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="contact-icon">📞</i>
+                            <div>
+                                <strong>Telefon</strong>
+                                <a href="tel:+48999111222">999 111 222</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="contact-icon">⏰</i>
+                            <div>
+                                <strong>Godziny otwarcia</strong>
+                                <span>Pon–Pt: 8:00–18:00 | Sob: 8:00–14:00</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="contact-icon">🏢</i>
+                            <div>
+                                <strong>NIP</strong>
+                                <span>1111111</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact-map slide-in-right">
+                    <div class="map-container">
+                        <iframe id="googleMap"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40000!2d20.0!3d50.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWarszawska+1%2C+Polska!5e0!3m2!1spl!2spl!4v1700000000000!5m2!1spl!2spl"
+                            width="100%" height="400" style="border:0; border-radius: 8px;" allowfullscreen=""
+                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            title="Mapa - KwiatyUEli, Warszawa 1">
+                        </iframe>
+                        <a href="https://maps.google.com/?q=Warszawska+1,+Polska" target="_blank"
+                            class="map-directions-btn" rel="noopener noreferrer">
+                            🗺️ Otwórz w Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================================================
+         MODALS
+         ================================================ -->
+
+    <!-- Modal: Bukiety okolicznościowe -->
+    <div class="modal-overlay" id="modal-bouquets" role="dialog" aria-modal="true"
+        aria-labelledby="modal-bouquets-title">
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Zamknij">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">💐</div>
+                <div>
+                    <span class="modal-tag">Nasza oferta</span>
+                    <h2 id="modal-bouquets-title">Bukiety okolicznościowe</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-lead">Każdy bukiet to osobna historia — oprawiona w kwiaty, wstążki i emocje. Tworzymy
+                    kompozycje dedykowane na każdą okazję, dobierając kwiaty do nastroju i oczekiwań naszych klientów.
+                </p>
+                <div class="modal-cols">
+                    <div>
+                        <h4>Co wchodzi w skład usługi?</h4>
+                        <ul class="modal-list">
+                            <li>✦ Konsultacja florystyczna (bezpłatna)</li>
+                            <li>✦ Dobór kwiatów sezonowych i egzotycznych</li>
+                            <li>✦ Ręczne wiązanie i owijanie bibuła lub papierem kraft</li>
+                            <li>✦ Personalizowana kartka okolicznościowa</li>
+                            <li>✦ Woda i saszetka odżywcza do bukietu</li>
+                            <li>✦ Opcja dostawy tego samego dnia</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Popularne okazje</h4>
+                        <ul class="modal-list">
+                            <li>🎂 Urodziny i imieniny</li>
+                            <li>💍 Rocznice i jubileusze</li>
+                            <li>🎓 Absolutorium i dyplom</li>
+                            <li>👶 Narodziny dziecka</li>
+                            <li>💼 Podziękowanie i gratulacje</li>
+                            <li>❤️ Walentynki i Dzień Kobiet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="tel:+48999111222" class="btn btn-primary">📞 Skontaktuj się telefonicznie</a>
+                <a href="#contact" class="btn-modal-secondary modal-close-link">Napisz do nas</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Florystyka ślubna -->
+    <div class="modal-overlay" id="modal-wedding" role="dialog" aria-modal="true" aria-labelledby="modal-wedding-title">
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Zamknij">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">💒</div>
+                <div>
+                    <span class="modal-tag">Dla par</span>
+                    <h2 id="modal-wedding-title">Florystyka ślubna</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-lead">Wasz Wielki Dzień zasługuje na kwiaty równie wyjątkowe jak Wasza miłość. Zajmujemy
+                    się kompleksową dekoracją florystyczną — od wiązanki ślubnej po wystrój sali weselnej.</p>
+                <div class="modal-cols">
+                    <div>
+                        <h4>Zakres usługi</h4>
+                        <ul class="modal-list">
+                            <li>✦ Wiązanka ślubna i butonierka Pana Młodego</li>
+                            <li>✦ Dekoracja kościoła / sali ceremonii</li>
+                            <li>✦ Centerpieces i dekoracja stołów weselnych</li>
+                            <li>✦ Wystrój samochodu pary młodej</li>
+                            <li>✦ Opaski i wianki dla druhen</li>
+                            <li>✦ Łuk / brama kwiatowa na plenerowe wesela</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Jak działamy?</h4>
+                        <ul class="modal-list">
+                            <li>📅 Konsultacja 3–6 miesięcy przed ślubem</li>
+                            <li>🎨 Próbna kompozycja wiązanki</li>
+                            <li>🤝 Indywidualny opiekun projektu</li>
+                            <li>🚛 Dostawa i aranżacja w dniu ślubu</li>
+                            <li>📸 Współpraca z fotografem i dekoratorem</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="tel:+48999111222" class="btn btn-primary">📞 Umów konsultację</a>
+                <a href="#contact" class="btn-modal-secondary modal-close-link">Zapytaj o termin</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal: Kwiaty doniczkowe -->
+    <div class="modal-overlay" id="modal-plants" role="dialog" aria-modal="true" aria-labelledby="modal-plants-title">
+        <div class="modal-panel">
+            <button class="modal-close" aria-label="Zamknij">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">🌿</div>
+                <div>
+                    <span class="modal-tag">Zielony zakątek</span>
+                    <h2 id="modal-plants-title">Kwiaty doniczkowe</h2>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p class="modal-lead">Rośliny doniczkowe ożywiają każde wnętrze i poprawiają jakość powietrza. Oferujemy
+                    bogaty dobór roślin — od eleganckich orchidei po pielęgnowane sukulenty i duże rośliny biurowe.</p>
+                <div class="modal-cols">
+                    <div>
+                        <h4>Co znajdziesz u nas?</h4>
+                        <ul class="modal-list">
+                            <li>✦ Orchidee (Phalaenopsis, Dendrobium)</li>
+                            <li>✦ Sukulenty i kaktusy — kolekcja 30+ gatunków</li>
+                            <li>✦ Rośliny tropikalne (Monstera, Ficus, Anthurium)</li>
+                            <li>✦ Kwiaty sezonowe i balkonowe</li>
+                            <li>✦ Eleganckie donice ceramiczne i rattanowe</li>
+                            <li>✦ Podłoża, nawozy i akcesoria do pielęgnacji</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4>Usługi dodatkowe</h4>
+                        <ul class="modal-list">
+                            <li>🌱 Bezpłatna porada w doborze roślin</li>
+                            <li>🎁 Kompozycja roślinne jako prezent</li>
+                            <li>📦 Pakowanie na prezent z kartką</li>
+                            <li>🏢 Aranżacja zieleni do biur i lokali</li>
+                            <li>💧 Porady w pielęgnacji online</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="tel:+48999111222" class="btn btn-primary">📞 Zadzwoń i zamów</a>
+                <a href="#contact" class="btn-modal-secondary modal-close-link">Zapytaj o dostępność</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Phone Button -->
+    <a href="tel:+48999111222" class="floating-phone" id="floatingPhone" title="Zadzwoń do nas"
+        aria-label="Zadzwoń: 999 111 222">
+        <span class="floating-phone-icon">📞</span>
+        <span class="floating-phone-label">999 111 222</span>
+    </a>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Wróć na górę" aria-label="Wróć na górę">
+        ↑
+    </button>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <div class="footer-logo">Kwiaty<span>UEli</span></div>
+                    <p>Tworzymy piękno z pasją.<br>Warszawa 1.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Szybkie linki</h4>
+                    <ul>
+                        <li><a href="#about">O nas</a></li>
+                        <li><a href="#offer">Oferta</a></li>
+                        <li><a href="#gallery">Galeria</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>📍 Warszawa 1</p>
+                    <p>📞 <a href="tel:+48999111222">999 111 222</a></p>
+                    <p>🏢 NIP: 1111111</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 KwiatyUEli. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1003,6 +1003,17 @@ a {
     margin-bottom: 2rem;
 }
 
+.p-action-wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+@media (max-width: 1024px) {
+    .p-action-wrapper {
+        justify-content: center;
+    }
+}
+
 .project-grid-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
